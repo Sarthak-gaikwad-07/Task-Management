@@ -120,8 +120,14 @@ function SignUp() {
                 theme="#F5F5FC"
             />
 
-            <Box sx={{ flexGrow: 1 }}>
-                <Grid container>
+<Box
+    sx={{
+        flexGrow: 1,
+        height: "100vh", // Full height of the viewport
+        overflow: "hidden", // Disable scrolling
+    }}
+>
+                <Grid container sx={{ height: "100%" }}>
                     <Grid
                         item
                         xs={6}
@@ -129,7 +135,7 @@ function SignUp() {
                             backgroundImage: `url('/blue-sign-in.jpg')`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                            height: "100vh",
+                            height: "100%",
                             color: "white",
                             textAlign: "center",
                         }}
@@ -158,7 +164,7 @@ function SignUp() {
                     <Grid item xs={6}>
                         <Box
                             sx={{
-                                height: "100vh",
+                                height: "100%",
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center",
